@@ -17,12 +17,12 @@ interface FormData {
 }
 
 const Contact: React.FC = () => {
-    const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
-    const [isLoading, setIsLoading] = useState(false);
+    const { register, handleSubmit, reset, formState: {} } = useForm<FormData>();
+    // const [isLoading, setIsLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState("");
 
     const onSubmit = async (data: FormData) => {
-        setIsLoading(true);
+        // setIsLoading(true);
 
         try {
             await emailjs.send(
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
             setSuccessMessage("Something went wrong. Please try again later.");
         }
 
-        setIsLoading(false);
+        // setIsLoading(false);
     };
 
     return (

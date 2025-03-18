@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, TargetAndTransition } from "framer-motion";
 import Image from "next/image";
 
 const skills = [
@@ -23,12 +23,12 @@ const skills = [
     { src: "/mysql.png", alt: "MySQL" },
 ];
 
-const floatAnimation = {
+const floatAnimation: TargetAndTransition = {
     y: [0, -10, 0], // Moves up and down
     transition: {
         duration: 3,
         repeat: Infinity,
-        repeatType: "mirror" as "mirror",
+        repeatType: "mirror",
         ease: "easeInOut",
     },
 };
