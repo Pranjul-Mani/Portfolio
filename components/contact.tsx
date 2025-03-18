@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
@@ -56,7 +55,7 @@ const Contact: React.FC = () => {
             <section className="flex items-center justify-center p-6 mt-5 ">
                 <Card className="w-full max-w-4xl max-h-6xl p-6 pb-1 shadow-md ">
                     <BackgroundBeamsWithCollision >
-                        <p className="text-2xl font-bold text-center">I'd love to hear your feedback!</p>
+                        <p className="text-2xl font-bold text-center">I&apos;d love to hear your feedback!</p>
 
 
                         <form onSubmit={handleSubmit(onSubmit)} className="mt-4 space-y-4 mx-6">
@@ -83,9 +82,7 @@ const Contact: React.FC = () => {
                                 />
                             </div>
 
-                            {/* <Button type="submit" disabled={isLoading}>
-                                {isLoading ? "Sending..." : "Send"}
-                            </Button> */}
+                           
                             <MagicButton
                                 title="Send"
                                 icon={<FaLocationArrow />}
