@@ -31,10 +31,12 @@ export const FloatingNav = ({
     });
 
     const scrollToSection = (id: string) => {
+        if (typeof document !== "undefined") {
         const section = document.querySelector(id);
         if (section) {
             section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+    }
     };
 
     return (
