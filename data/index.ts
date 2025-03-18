@@ -1,0 +1,107 @@
+export const navItems = [
+  { name: "Home", link: "#home" },
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Skills", link: "#skills" },
+  { name: "Contact", link: "#contact" },
+];
+
+export const gridItems = [
+  {
+    id: 1,
+    title: "I prioritize client collaboration, fostering open communication ",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/b1.svg",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "I'm very flexible with time zone communications",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "My tech stack",
+    description: "I constantly try to improve",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Tech enthusiast with a passion for development.",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+
+  {
+    id: 5,
+    title: "Always tinkering with new technologies and libraries.",
+    description: "The Inside Scoop",
+    className: "md:col-span-3 md:row-span-2",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "/b5.svg",
+    spareImg: "/grid.svg",
+  },
+  {
+    id: 6,
+    title: "Let's connect on Linkedin!",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "HorizonAI - Success Through AI",
+    des: "Your Career, Accelerated! Personalized guidance, interview prep, and AI-powered tools to help you and bring success.",
+    img: "/hi.png",
+    iconLists: ["/re.svg", "/tail.svg", "/next.svg", "/ts.svg", "/fm.svg"],
+    link: "https://horizon-ai-ten.vercel.app",
+  },
+  {
+    id: 2,
+    title: "WanderLust",
+    des: "Created a dynamic full-stack web application where users can create, view, and manage their own listings.",
+    img: "/w.png",
+    iconLists: ["/html.png" ,"/css-3.png","/js.png","/mongo.png" ,"/cloudName.svg"],
+    link: "  https://wanderlust-mku5.onrender.com/listings",
+  },
+  {
+    id: 3,
+    title: "FilmFolio",
+    des: "Your go-to movie guide . Checkout the latest movies with their ratings .",
+    img: "/ff.png",
+    iconLists: ["/html.png" ,"/css-3.png","/js.png","/api1.png"],
+    link: " https://pranjul-mani.github.io/FilmFolio/",
+  },
+  {
+    id: 4,
+    title: "TravelTales",
+    des: "Developed a social media application where you can login and create , like and delete posts.",
+    img: "/TT.png",
+    iconLists: ["/re.svg" , "/mongo.png","nodejs.png","/js.png"],
+    link: "https://github.com/Pranjul-Mani/TravelTales?tab=readme-ov-file",
+  },
+];
+
