@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -31,7 +32,7 @@ export const FloatingNav = ({
     });
 
     const scrollToSection = (id: string) => {
-        if ( typeof window !== "undefined" || typeof document !== "undefined" ) {
+        if ( typeof window != "undefined" || typeof document != "undefined" ) {
             const section = document.querySelector(id);
             if (section) {
                 section.scrollIntoView({ behavior: "smooth", block: "start" });

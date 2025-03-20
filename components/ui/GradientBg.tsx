@@ -1,4 +1,5 @@
-"use client";
+"use client"; 
+
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
@@ -40,7 +41,7 @@ export const BackgroundGradientAnimation = ({
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
   useEffect(() => {
-    if (typeof window !== "undefined" || typeof document !== "undefined") {
+    if (typeof window != "undefined" || typeof document != "undefined") {
       document.body.style.setProperty(
         "--gradient-background-start",
         gradientBackgroundStart
