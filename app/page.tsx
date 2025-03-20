@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 // import { FloatingNav } from "@/components/ui/FloatingNav";
 // import { FaHome } from "react-icons/fa";
 import Projects from "@/components/Projects";
-import { navItems } from "@/data";
+// import { navItems } from "@/data";
 // import { MultiStepLoaderDemo } from "@/components/ui/multi-step-loader-demo";
 
 
