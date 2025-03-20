@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/hero";
 import Grid from "@/components/Grid";
 import Skills from "@/components/skills";
