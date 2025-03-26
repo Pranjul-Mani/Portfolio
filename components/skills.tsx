@@ -24,7 +24,7 @@ const skills = [
 ];
 
 const floatAnimation: TargetAndTransition = {
-    y: [0, -10, 0], // Moves up and down
+    y: [0, -10, 0], 
     transition: {
         duration: 3,
         repeat: Infinity,
