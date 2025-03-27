@@ -1,43 +1,82 @@
+"use client"
+
 import MagicButton from './ui/MagicButton';
 import { Spotlight } from './ui/Spotlight';
-import { TextGenerateEffect } from './ui/TextGenerateEffect';
-import { FaLocationArrow } from 'react-icons/fa';
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 const Hero = () => {
+
     return (
-        <div className='pb-20 pt-36' id='home'>
-            <div>
-                <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill="white" />
-                <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill="purple" />
-                <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="blue" />
-            </div>
 
-            <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2 ]  flex items-center justify-center absolute top-0 left-0">
-                <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-            </div>
+        <section className="py-16 text-center mt-20  scroll-mt-24 mb-20" id='home'>
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-40 mt-10 md:mt-20">
 
-            <div className='flex justify-center relative my-20 z-10'>
-                <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center
-                justify-center'>
-                    {/* <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Dynamic Web Magic with Next.js</h2> */}
+                <div>
+                    <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill="white" />
+                    <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill="purple" />
+                    <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="blue" />
+                </div>
 
-                    <TextGenerateEffect className='text-center texr-[40px] md:text-5xl lg:text-6xl'
-                        words='Transforming Concepts into Seamless User Experiences'
-                    />
-                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl '>
-                        Hi, I&apos;m Pranjul Mani , a Full Stack Developer.
+                <div className="text-center md:text-left">
+                    <h1 className="text-4xl font-bold">
+                        Hello, It's me <br />
+                        <span className="text-cyan-400">Pranjul Mani</span>
+                    </h1>
+                    <h2 className="text-xl mt-2 text-gray-300">{" "}
+                        <span className="text-gray-300">Full Stack Developer</span>
+                    </h2>
+                    <p className="text-gray-400 mt-4 max-w-md">
+                        Passionate about building scalable web applications with modern technologies.
                     </p>
-                    <a href="#about">
+
+
+                    <div className="flex justify-center md:justify-start gap-4 mt-4 ">
+                        <a href="https://github.com/pranjul-mani" className="text-3xl">
+                            <i><FaGithub /></i>
+                        </a>
+                        <a href="https://linkedin.com/in/pranjul-mani" className="text-blue-400 text-3xl">
+                            <i><FaLinkedin /></i>
+                        </a>
+                    </div>
+
+
+                    <a
+                        href="https://drive.google.com/file/d/1kWu0Ia5YRLpz5Yp61jHx31yJL6MOLsD7/view?usp=drive_link"
+                        download>
                         <MagicButton
-                            title="Show my work"
-                            icon={<FaLocationArrow />}
-                            position='right'
+                            title="Resume"
+                            icon={""}
+                            position=''
+
                         />
+
                     </a>
                 </div>
+
+
+                <motion.div
+                    initial={{ y: -10 }}
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                    className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 ml-0 md:ml-20"
+                >
+                    <div className="absolute inset-0 bg-cyan-400 rounded-full blur-xl"></div>
+                    <div className="relative rounded-full overflow-hidden border-4 border-cyan-400">
+                        <Image
+                            src="/profile.jpg"
+                            alt="Profile"
+                            width={300}
+                            height={300}
+                            className="object-cover"
+                        />
+                    </div>
+                </motion.div>
             </div>
-        </div>
+
+        </section >
     )
 }
 
