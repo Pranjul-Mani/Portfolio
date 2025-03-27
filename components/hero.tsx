@@ -22,7 +22,7 @@ const Hero = () => {
 
                 <div className="text-center md:text-left">
                     <h1 className="text-4xl font-bold">
-                        Hello, It's me <br />
+                        Hello, It&apos;s me <br />
                         <span className="text-cyan-400">Pranjul Mani</span>
                     </h1>
                     <h2 className="text-xl mt-2 text-gray-300">{" "}

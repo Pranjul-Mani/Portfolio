@@ -1,6 +1,4 @@
 "use client"
-import { motion } from 'framer-motion';
-
 
 
 const About = () => {
@@ -15,7 +13,7 @@ const About = () => {
     
        
         <p className="mt-10 text-lg sm:text-xl md:text-2xl text-gray-300 text-center leading-relaxed max-w-4xl mx-auto">
-            Hey there! I'm a passionate <span className="text-cyan-400 font-semibold">Full Stack Developer </span> 
+            Hey there! I&apos;m a passionate <span className="text-cyan-400 font-semibold">Full Stack Developer </span> 
              specializing in <span className="text-cyan-400 font-semibold">MERN stack</span> and <span className="text-cyan-400 font-semibold">Java</span>.
             Currently pursuing my <span className="text-cyan-400 font-semibold">Computer Science degree at MMMUT</span>,
             I love building web applications that blend <span className="text-cyan-400 font-semibold">performance, design, and functionality</span>.
