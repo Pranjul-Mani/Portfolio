@@ -18,11 +18,11 @@ Welcome to my personal portfolio !
 
 ## Tech Stack
 
-#### Next.js – A React framework for building fast and scalable web applications.
+- #### Next.js – A React framework for building fast and scalable web applications.
 
-#### TailwindCSS – A utility-first framework for fast, responsive, and customizable UI design.
+- #### TailwindCSS – A utility-first framework for fast, responsive, and customizable UI design.
 
-#### Framer Motion – A powerful animation library.
+- #### Framer Motion – A powerful animation library.
 
 
 ## Deployment
