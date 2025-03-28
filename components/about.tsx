@@ -5,7 +5,7 @@ const About = () => {
 
     return (
         <section className="text-white py-16 px-6 sm:px-10 md:px-16 lg:px-32 xl:px-48 
-                   mt-10 sm:mt-20 md:mt-24 mb-16 sm:mb-20 md:mb-24" id="about">
+                   mt-10 sm:mt-10 md:mt-24 mb-16 sm:mb-20 md:mb-24" id="about">
        
         <h2 className="text-4xl sm:text-3xl md:text-5xl font-bold text-center py-6">
             About Me

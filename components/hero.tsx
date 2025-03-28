@@ -11,8 +11,9 @@ const Hero = () => {
 
     return (
 
-        <section className="py-16 text-center mt-20  scroll-mt-24 mb-20" id='home'>
-            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-40 mt-10 md:mt-20">
+        <section className="py-12 sm:py-16 text-center mt-10 sm:mt-16 md:mt-20 scroll-mt-24 mb-20 sm:mb-10 px-4 sm:px-8 md:px-16" id='home'>
+
+            <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-40 mt-10 md:mt-20">
 
                 <div>
                     <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill="white" />

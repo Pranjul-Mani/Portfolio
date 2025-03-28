@@ -35,7 +35,7 @@ const floatAnimation: TargetAndTransition = {
 
 const Skills = () => {
     return (
-        <section className=" py-16 text-center mt-10" id="skills">
+        <section className=" py-16 text-center mt-10 scroll-m-10" id="skills">
             <h2 className="text-5xl font-bold text-white">Skills</h2>
             <div className="flex flex-wrap justify-center gap-20 mt-20">
                 {skills.map((skill, index) => (
