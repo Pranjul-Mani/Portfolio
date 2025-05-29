@@ -45,7 +45,7 @@ const Hero = () => {
 
 
                     <a
-                        href="https://drive.google.com/file/d/1n0dwqdhui39R5sF1xVrciMlLeFg4Fein/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/10h7vqs1biMHH6FQC-sb1riRgmiTQc20I/view?usp=drive_link"
                         download>
                         <MagicButton
                             title="Resume"
