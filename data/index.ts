@@ -18,11 +18,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "WanderLust",
+    title: "ListNest",
     des: "Created a dynamic full-stack web application where users can create, view, and manage their own listings.",
-    img: "/w.png",
+    img: "/listnest.png",
     iconLists: ["/html.png" ,"/css-3.png","/js.png","/mongo.png" ,"/cloudName.svg"],
-    link: "  https://wanderlust-mku5.onrender.com/listings",
+    link: "https://listnest-jtzz.onrender.com/listings",
   },
   {
     id: 3,
