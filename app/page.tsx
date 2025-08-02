@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Projects from "@/components/project";
 import { navItems } from "@/data";
+import Education from "@/components/education";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Education/>
         <Contact />
       </div>
       <Footer />

@@ -17,7 +17,7 @@ export const FloatingNav = ({
     className?: string;
 }) => {
     const { scrollYProgress } = useScroll();
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(true);
 
     useMotionValueEvent(scrollYProgress, "change", (current) => {
         if (typeof current === "number") {
@@ -47,7 +47,7 @@ export const FloatingNav = ({
                 animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
                 transition={{ duration: 0.2 }}
                 className={cn(
-                    "flex max-w-xs sm:max-w-fit fixed top-6 sm:top-10 inset-x-0 mx-auto border rounded-full shadow-md z-[5000] px-6 py-3 sm:px-10 sm:py-5 items-center justify-center space-x-2 sm:space-x-4 border-white/[0.2] bg-black-100"
+                    "flex max-w-[90vw] sm:max-w-fit fixed top-6 sm:top-10 inset-x-0 mx-auto border rounded-full shadow-md z-[5000] px-3 py-2 sm:px-10 sm:py-5 items-center justify-center space-x-1 sm:space-x-4 border-white/[0.2] bg-black-100"
                     ,
                     className
                 )}
@@ -57,12 +57,11 @@ export const FloatingNav = ({
                         key={`link=${idx}`}
                         onClick={() => scrollToSection(navItem.link)}
                         className={cn(
-                           "relative dark:text-neutral-50 items-center flex space-x-1 sm:space-x-2 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-
+                           "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 whitespace-nowrap"
                         )}
                     >
-                        <span className="block sm:hidden">{navItem.icon}</span>
-                        <span className="text-sm !cursor-pointer">{navItem.name}</span>
+                        <span className="block sm:hidden text-xs">{navItem.icon}</span>
+                        <span className="text-xs sm:text-sm !cursor-pointer">{navItem.name}</span>
                     </button>
                 ))}
             </motion.div>

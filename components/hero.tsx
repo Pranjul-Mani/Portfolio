@@ -27,10 +27,10 @@ const Hero = () => {
                         <span className="text-cyan-400">Pranjul Mani</span>
                     </h1>
                     <h2 className="text-xl mt-2 text-gray-300">{" "}
-                        <span className="text-gray-300">Full Stack Developer</span>
+                        <span className="text-gray-300"> Code. Create. Scale.</span>
                     </h2>
                     <p className="text-gray-400 mt-4 max-w-md">
-                        Passionate about building scalable web applications with modern technologies.
+                        Aspiring Software Engineer | Passionate about Web & AI 
                     </p>
 
 
@@ -45,7 +45,7 @@ const Hero = () => {
 
 
                     <a
-                        href="https://drive.google.com/file/d/1MlGk1aNEUy_6MjSBbz8sJGSxI9CBUXRe/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1QqrwR3Gp2kpcPV6RrpiwqQaD_4gtg2RS/view?usp=drive_link"
                         download>
                         <MagicButton
                             title="Resume"
