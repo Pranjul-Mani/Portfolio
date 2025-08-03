@@ -1,7 +1,14 @@
-
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Pranjul's Portfolio",
+  description: "Portfolio of Pranjul",
+  icons: {
+    icon: "/profile.svg", // Path to your favicon file
+  },
+};
 
 export default function RootLayout({
   children,
@@ -10,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
