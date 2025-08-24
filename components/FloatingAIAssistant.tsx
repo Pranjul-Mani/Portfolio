@@ -136,7 +136,7 @@ const FloatingAIAssistant: React.FC = () => {
                         ) : (
                             <div className="space-y-3">
                                 <p className="text-gray-300 text-xs text-center">
-                                    Hi there! I'm PRAX, Pranjul's AI assistant.
+                                    Hi there! I&apos;m PRAX, Pranjul&apos;s AI assistant.
                                 </p>
 
                                 <button
