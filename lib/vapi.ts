@@ -1,13 +1,13 @@
 // lib/vapi.ts
 import Vapi from "@vapi-ai/web";
 
-if (!process.env.VAPI_API_KEY) {
+if (!process.env.NEXT_PUBLIC_VAPI_API_KEY) {
   throw new Error("NEXT_PUBLIC_VAPI_API_KEY is not defined");
 }
 
-export const vapi = new Vapi(process.env.VAPI_API_KEY);
+export const vapi = new Vapi(process.env.NEXT_PUBLIC_VAPI_API_KEY);
 
-const assistantId = process.env.ASSISTANT_ID;
+const assistantId = process.env.NEXT_PUBLIC_ASSISTANT_ID;
 
 if (!assistantId) {
   throw new Error("NEXT_PUBLIC_ASSISTANT_ID is not defined");
