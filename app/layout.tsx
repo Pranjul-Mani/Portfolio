@@ -1,3 +1,4 @@
+import FloatingAIAssistant from "@/components/FloatingAIAssistant";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import type { Metadata } from "next";
@@ -25,6 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <FloatingAIAssistant />
         </ThemeProvider>
       </body>
     </html>
