@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { startAssistant, stopAssistant } from "@/lib/vapi";
 import { useVapi } from "@/hooks/useVapi";
-import { FaMicrophone, FaMicrophoneSlash, FaTimes, FaRobot } from "react-icons/fa";
+import { FaMicrophone, FaMicrophoneSlash, FaTimes } from "react-icons/fa";
 
 const FloatingAIAssistant: React.FC = () => {
     const [isExpanded, setIsExpanded] = useState(false);
