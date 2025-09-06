@@ -18,28 +18,36 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Pix.Ai - Create, Edit & Imagine with AI",
+    des: "AI-powered web app for image generation and editing.",
+    img: "/pix.png",
+    iconLists: ["/re.svg", "/tail.svg", "/nodejs.png","/fm.svg","/mongo.png","/exp.svg"],
+    link: "https://channel-manager-amber.vercel.app/",
+  },
+  {
+    id: 3,
     title: "ChannelFlow",
-    des: "A full-stack Hotel Channel Manager web application that helps admin efficiently manage room bookings, inventory and a real-time booking calendar.",
+    des: "A full-stack Channel Manager web application that helps admin efficiently manage room bookings, inventory and a real-time booking calendar.",
     img: "/cf.png",
     iconLists: ["/re.svg", "/tail.svg", "/next.svg","/fm.svg","/mongo.png"],
     link: "https://channel-manager-amber.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "ListNest",
     des: "Created a dynamic full-stack web application where users can create, view, and manage their own listings.",
     img: "/listnest.png",
     iconLists: ["/html.png", "/css-3.png", "/js.png", "/mongo.png", "/cloudName.svg"],
     link: "https://listnest-jtzz.onrender.com/listings",
   },
-  {
-    id: 4,
-    title: "FilmFolio",
-    des: "Your go-to movie guide . Checkout the latest movies with their ratings .",
-    img: "/ff.png",
-    iconLists: ["/html.png", "/css-3.png", "/js.png", "/api1.png"],
-    link: " https://pranjul-mani.github.io/FilmFolio/",
-  },
+  // {
+  //   id: 4,
+  //   title: "FilmFolio",
+  //   des: "Your go-to movie guide . Checkout the latest movies with their ratings .",
+  //   img: "/ff.png",
+  //   iconLists: ["/html.png", "/css-3.png", "/js.png", "/api1.png"],
+  //   link: " https://pranjul-mani.github.io/FilmFolio/",
+  // },
 ];
 
 export const workExperience = [

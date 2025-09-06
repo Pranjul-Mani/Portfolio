@@ -36,9 +36,8 @@ const FloatingAIAssistant: React.FC = () => {
                 {Array.from({ length: bars }, (_, i) => (
                     <motion.div
                         key={i}
-                        className={`w-0.5 bg-cyan-400 rounded-full ${
-                            i / bars < volume ? "opacity-100" : "opacity-30"
-                        }`}
+                        className={`w-0.5 bg-cyan-400 rounded-full ${i / bars < volume ? "opacity-100" : "opacity-30"
+                            }`}
                         style={{
                             height: callDetails.assistantIsSpeaking
                                 ? Math.random() * 6 + 3 + "px"
@@ -61,7 +60,7 @@ const FloatingAIAssistant: React.FC = () => {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-50">
+        <div className="fixed bottom-12 right-12 z-50">
             <AnimatePresence>
                 {isExpanded && (
                     <motion.div
@@ -75,7 +74,7 @@ const FloatingAIAssistant: React.FC = () => {
                         <div className="flex items-center justify-between mb-3">
                             <div className="flex items-center gap-2">
                                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 flex items-center justify-center">
-                                    <FaRobot className="text-white text-sm" />
+                                    < img src="bot2.gif" className="text-white text-sm" />
                                 </div>
                                 <div className="flex flex-col">
                                     <h3 className="text-white font-semibold text-sm">PRAX</h3>
@@ -97,12 +96,11 @@ const FloatingAIAssistant: React.FC = () => {
                             <div className="space-y-3">
                                 <div className="text-center">
                                     <div className="flex items-center justify-center gap-2 mb-2">
-                                        <motion.div 
-                                            className={`w-2 h-2 rounded-full ${
-                                                callDetails.assistantIsSpeaking
-                                                    ? "bg-green-400"
-                                                    : "bg-gray-400"
-                                            }`}
+                                        <motion.div
+                                            className={`w-2 h-2 rounded-full ${callDetails.assistantIsSpeaking
+                                                ? "bg-green-400"
+                                                : "bg-gray-400"
+                                                }`}
                                             animate={{
                                                 scale: callDetails.assistantIsSpeaking ? [1, 1.2, 1] : 1,
                                                 opacity: callDetails.assistantIsSpeaking ? [1, 0.7, 1] : 1
@@ -156,11 +154,10 @@ const FloatingAIAssistant: React.FC = () => {
             {/* Main Floating Button */}
             <motion.button
                 onClick={() => callDetails.isCallActive ? handleStopAssistant() : setIsExpanded(!isExpanded)}
-                className={`relative w-16 h-16 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center ${
-                    callDetails.isCallActive
-                        ? "bg-red-500 hover:bg-red-600"
-                        : "bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600"
-                }`}
+                className={`relative w-16 h-16 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center ${callDetails.isCallActive
+                    ? "bg-red-500 hover:bg-red-600"
+                    : "bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600"
+                    }`}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 animate={{
@@ -186,11 +183,15 @@ const FloatingAIAssistant: React.FC = () => {
                 )}
 
                 {/* Icon */}
-                <div>
+                <div className="w-32 h-32 flex items-center justify-center rounded-full overflow-hidden">
                     {callDetails.isCallActive ? (
                         <FaMicrophoneSlash className="text-white text-xl" />
                     ) : (
-                        <FaRobot className="text-white text-xl" />
+                        <img
+                            src="/bot3.gif"
+                            alt="Chatbot"
+                            className="w-full h-full object-cover"
+                        />
                     )}
                 </div>
 
