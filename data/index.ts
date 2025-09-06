@@ -19,10 +19,10 @@ export const projects = [
   {
     id: 2,
     title: "Pix.Ai - Create, Edit & Imagine with AI",
-    des: "AI-powered web app for image generation and editing.",
+    des: "Developed a full-stack AI-powered web application offering multiple image editing and generation tools.",
     img: "/pix.png",
     iconLists: ["/re.svg", "/tail.svg", "/nodejs.png","/fm.svg","/mongo.png","/exp.svg"],
-    link: "https://channel-manager-amber.vercel.app/",
+    link: "https://pixai-client.vercel.app/",
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const education = [
     degree: "Bachelor of Technology in Computer Science",
     duration: "November 2022 - Present",
     location: "Gorakhpur, Uttar Pradesh, India",
-    cgpa: "7.23/10"
+    cgpa: "7.37/10"
   },
   {
     id: 2,
